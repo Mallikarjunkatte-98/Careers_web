@@ -9,35 +9,36 @@
             height: 360px;
             object-fit: cover;
             width: 100%;
+            margin-bottom: 16px;
         }
     </style>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
   </head>
   <body>
+    {% include "nav.html" %}
+    <img class="img-fluid" id="banner" src="../static/homepage.jpg"/>
     <div class="container">
+        
         <h1 class="text-center mt-2 mb-4">{{company}}'s Careers</h1>
-        <img class="img-fluid" id="banner" src="../static/homepage.jpg"/>
-        <h2 class="text-center  mt-3 mb-4">About us</h2>
-        <p class="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint possimus
-            doloribus odio laudantium ad ipsam assumenda? Illo, itaque? Excepturi amet, 
-            commodi magni nostrum perspiciatis fuga hic sed nulla quae cupiditate praesentium,
-            laboriosam quisquam et nisi! Neque quo eveniet hic nemo rerum dolores, vero earum atque
-            quisquam? Cum eligendi repellat placeat quas beatae odit labore odio officiis nihil unde. 
-            Aliquid qui quis labore dolorem incidunt minima rem inventore, expedita eius! Ipsam, asperiores quo 
-            molestiae ex culpa dolores unde, aliquam optio temporibus, sequi laboriosam amet! Eaque et 
-            non maxime laudantium, veniam corrupti dicta quibusdam eius iure tempora molestiae cum perferendis 
-            totam enim, pariatur fuga, suscipit officiis quas aspernatur architecto odio eum nostrum mollitia! 
-            Ea doloremque corrupti mollitia obcaecati provident exercitationem quidem fugit dolorem ad at magni 
-            aliquam a quibusdam voluptatem cum perspiciatis quisquam possimus, repudiandae atque non aut fugiat 
-            architecto. Placeat repellat corrupti mollitia harum optio dolorum non eos, assumenda facere eaque 
-            dolor aperiam voluptates obcaecati dolorem minus laboriosam reiciendis accusamus necessitatibus 
-            libero quidem expedita? Repudiandae nemo hic eligendi sint voluptate aspernatur accusamus magni 
-            culpa dignissimos, quo, inventore et? Reprehenderit earum aliquid quos error perferendis placeat 
-            doloribus consequuntur quidem distinctio architecto molestias cumque, deleniti est autem porro sit 
-            ad laborum, temporibus delectus obcaecati! Voluptate rerum commodi consequuntur ratione unde cum, 
-            dignissimos molestias corporis atque dicta officia ullam exercitationem est laborum maiores sunt quos 
-            architecto assumenda. Dolor, blanditiis nobis exercitationem modi pariatur ipsam in, nostrum omnis 
-        </p>
+        <div class="row" style="margin-top: 8px;margin-bottom: 12px;">
+          <div class="col-md-6"> 
+          <p class="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint possimus
+              doloribus odio laudantium ad ipsam assumenda? Illo, itaque? Excepturi amet, 
+              commodi magni nostrum perspiciatis fuga hic sed nulla quae cupiditate praesentium,
+              laboriosam quisquam et nisi! Neque quo eveniet hic nemo rerum dolores, vero earum atque
+              quisquam? Cum eligendi repellat placeat quas beatae odit labore odio officiis nihil unde. 
+              Aliquid qui quis labore dolorem incidunt minima rem inventore, expedita eius! Ipsam, asperiores quo 
+              molestiae ex culpa dolores unde, aliquam optio temporibus, sequi laboriosam amet! Eaque et 
+              non maxime laudantium, veniam corrupti dicta quibusdam eius iure tempora molestiae cum perferendis  
+              ad laborum, temporibus delectus obcaecati! Voluptate rerum commodi consequuntur ratione unde cum, 
+              dignissimos molestias corporis atque dicta officia ullam exercitationem est laborum maiores sunt quos 
+              architecto assumenda. Dolor, blanditiis nobis exercitationem modi pariatur ipsam in, nostrum omnis 
+          </p>
+          </div>
+          <div class="d-none d-md-block col-md-6">
+          <img src="../static/people.jpg" style="height: 420px;border-radius: 4px;">
+          </div>
+        </div>
         <h2 class="text-center  mt-2 mb-4" >Open Positions</h2>
             {% include 'jobitem.html' %}
         <div class="text-center">
